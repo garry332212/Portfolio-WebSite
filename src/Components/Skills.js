@@ -5,8 +5,8 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import java from "../assets/java.png";
-// import c from "../assets/C.png";
-// import php from "../assets/php.png";
+import c from "../assets/C.png";
+import php from "../assets/php.png";
 import github from "../assets/github.png";
 
 
@@ -48,31 +48,31 @@ const Skills = () => {
       title: "Java",
       style: "shadow-red-800",
     },
-    // {
-    //   id: 7,
-    //   src: c,
-    //   title: "C Programming",
-    //   style: "shadow-blue-300",
-    // },
-    // {
-    //   id: 8,
-    //   src: php,
-    //   title: "PHP",
-    //   style: "shadow-purple-300",
-    // },
+    {
+      id: 7,
+      src: c,
+      title: "C Programming",
+      style: "shadow-blue-300",
+    },
+    {
+      id: 8,
+      src: php,
+      title: "PHP",
+      style: "shadow-purple-300",
+    },
   ];
 
   return (
     <div
       name="skills"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black w-full pt-10"
     >
       <div className="max-w-screen-lg mx-auto p-6 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-300 p-2 inline">
            Skills
           </p>
-          <p className="py-6">These are the technologies I've worked with</p>
+          <p className="py-6">I have a good experience working with the following</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
