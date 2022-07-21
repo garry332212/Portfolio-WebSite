@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
-import {Link} from "react-scroll";
+import { Link } from "react-scroll";
 
 function Navbar() {
   //useState for the menu icon to do change its state
@@ -15,27 +15,25 @@ function Navbar() {
     { id: 3, link: "portfolio" },
     { id: 5, link: "skills" },
     { id: 4, link: "contact" },
-
-  
   ];
 
   return (
     //the main div to wrap up the entire Navbar
     <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-black to-gray-800 fixed">
       <div>
-        <h1 className="text-5xl font-signature ml-1">I'm Guri </h1>
+        <h1 className="text-5xl font-signature ml-1">I'm Gurvinder </h1>
       </div>
 
       {/* This ul tags will wrap the links and style them within  */}
       <ul className="hidden md:flex">
-        {headerMenu.map(({id, link}) => (
+        {headerMenu.map(({ id, link }) => (
           <li
             key={id}
             className="px-4 cursor-pointer font-medium text-gray-200 hover:scale-105 duration-200 capitalize"
           >
-          <Link to={link} smooth duration={500}>
-            {link}
-          </Link>
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -49,25 +47,25 @@ function Navbar() {
         {navIcon ? <FaTimes size={30} /> : <GiHamburgerMenu size={30} />}
       </div>
 
-      {navIcon &&(
+      {navIcon && (
         <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-l from-pink-600 to-black">
-      
-
-      {headerMenu.map(({link, id}) => (
-        <li
-          key={id}
-          className="px-4 cursor-pointer capitalize py-6 text-4xl"
-        >
-         <Link onClick={() => setNavIcon(!navIcon)}
-         to={link} smooth duration={500}>
-            {link}
-          </Link>
-        </li>
-      ))}
-    </ul>
+          {headerMenu.map(({ link, id }) => (
+            <li
+              key={id}
+              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+            >
+              <Link
+                onClick={() => setNavIcon(!navIcon)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
+            </li>
+          ))}
+        </ul>
       )}
-
-      
     </div>
   );
 }

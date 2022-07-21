@@ -9,7 +9,6 @@ import c from "../assets/C.png";
 import php from "../assets/php.png";
 import github from "../assets/github.png";
 
-
 const Skills = () => {
   const techs = [
     {
@@ -70,9 +69,11 @@ const Skills = () => {
       <div className="max-w-screen-lg mx-auto p-6 flex flex-col justify-center w-full h-full text-white">
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-300 p-2 inline">
-           Skills
+            Skills
           </p>
-          <p className="py-6">I have a good experience working with the following</p>
+          <p className="py-6">
+            I have a good experience working with the following
+          </p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
