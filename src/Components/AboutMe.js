@@ -19,8 +19,7 @@ const AboutMe = () => {
           managment and how to be a project leader as well. Now that i graduated
           from university i am looking to take my current skills to the next
           level. After Graduation i started working on React.js on my own with
-          the help of youtube tutorials and some courses from UDEMY. Now i have
-          a decent amount of knowlegde in React.js.
+          the help of youtube tutorials and some courses from UDEMY.
         </p>
 
         <br />
