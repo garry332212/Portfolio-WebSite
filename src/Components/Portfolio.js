@@ -3,6 +3,7 @@ import DiceGame from "../assets/portfolio/Dice Game.JPG";
 import FoodOrdering from "../assets/portfolio/FoodOrdering.JPG";
 import LinkedinClone from "../assets/portfolio/LinkedinClone.JPG";
 import TodoApp from "../assets/portfolio/TodoApp.JPG";
+import Expense from "../assets/portfolio/Expense.JPG";
 
 const Portfolio = () => {
   const portfolios = [
@@ -35,6 +36,13 @@ const Portfolio = () => {
       link: "https://guri-dicegame.netlify.app/",
       code: "https://github.com/garry332212/Dice-GAME-Js",
       title: "1 v 1 Dice Roll (Randome Dice  Game)",
+    },
+    {
+      id: 5,
+      src: Expense,
+      link: "https://guris-expensetracker.netlify.app/",
+      code: "https://github.com/garry332212/Expense_Tracker_React-js",
+      title: " Keep Track of Your Expenses (React js)",
     },
   ];
 
