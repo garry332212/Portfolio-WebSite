@@ -10,7 +10,7 @@ const Portfolio = () => {
       id: 1,
       src: TodoApp,
       link: "https://react-http-4dcfb.web.app/",
-      code: "https://github.com/garry332211/React_Sunny_Sangha/tree/main/linkedin_clone ",
+      code: "https://github.com/garry332212/React-Todo-Firebase",
       title: "Todo App With Firebase Authentication",
     },
 
@@ -25,7 +25,7 @@ const Portfolio = () => {
       id: 3,
       src: LinkedinClone,
       link: "https://gurvinder-linkedin-clone.netlify.app/ ",
-      code: "https://github.com/garry332211/React_Sunny_Sangha/tree/main/linkedin_clone ",
+      code: "https://github.com/garry332212/LinkedIn-Clone-React-js",
       title: "Linked Home Page Replica In React Js",
     },
 
@@ -33,7 +33,7 @@ const Portfolio = () => {
       id: 4,
       src: DiceGame,
       link: "https://guri-dicegame.netlify.app/",
-      code: "https://github.com/garry332211/PigGame",
+      code: "https://github.com/garry332212/Dice-GAME-Js",
       title: "1 v 1 Dice Roll (Randome Dice  Game)",
     },
   ];
