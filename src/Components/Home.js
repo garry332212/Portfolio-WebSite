@@ -1,5 +1,6 @@
 import React from "react";
-import MyDp from "../assets/me.jpg";
+// import MyDp from "../assets/me.jpg";
+import Degree from "../assets/degree.jpg";
 import { TbArrowNarrowRight } from "react-icons/tb";
 import { Link } from "react-scroll";
 const Home = () => {
@@ -44,9 +45,9 @@ const Home = () => {
 
         <div className="md:pt-60 pb-28">
           <img
-            src={MyDp}
+            src={Degree}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/4 md:w-half "
+            className="rounded-2xl mx-auto w-2/3 md:w-half"
           />
         </div>
       </div>
