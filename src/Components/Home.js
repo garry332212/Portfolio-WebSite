@@ -1,5 +1,4 @@
 import React from "react";
-// import MyDp from "../assets/me.jpg";
 import Degree from "../assets/degree.jpg";
 import { TbArrowNarrowRight } from "react-icons/tb";
 import { Link } from "react-scroll";
@@ -21,10 +20,10 @@ const Home = () => {
               {" "}
               Gurvinder Singh,
             </span>{" "}
-            I have a Bachelor Degree In Computer & Information Science from
+            I have a Bachelor Degree In Computer & Information Science <span className="font-bold ">(Majored In Software Development)</span> from
             Auckland University Of Technology. <br /> I{" "}
-            <span className="text-red-500">❤</span> being a Web Developer
-            because of the fact that it lets me create new things out of
+            believe that front-end development satisfy my need for creativity. I love front-end web development because of 
+            the fact that it lets me create new things out of
             nothing.
           </p>
 
@@ -32,7 +31,7 @@ const Home = () => {
             <Link
               to="portfolio"
               smooth
-              duration={500}
+              duration={300}
               className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer mb-10"
             >
               Portfolio

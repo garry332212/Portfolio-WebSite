@@ -91,6 +91,12 @@ const Portfolio = () => {
               switch the player) Whover Reaches 50 points first wins the game.{" "}
               <span className="font-bold text-red-500">(JavaScript)</span>
             </p>
+            <p className="py-1 mb-10">
+              I created this React project as i started learning React js. This project was created using states and props only (very basics of react features)
+              Expense Tracker lets users add their expense with the date they have spent the amount and then displays it to the user with bars. 
+              These bars indicates in which month of the year user have spent more. This project currently is not using any backend databse. but i have planes to give this project authentication like the Todo-App. 
+              <span className="font-bold text-red-500">(React js)</span>
+            </p>
           </span>
         </div>
 

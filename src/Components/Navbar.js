@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
+
 function Navbar() {
   //useState for the menu icon to do change its state
 
@@ -16,7 +17,7 @@ function Navbar() {
     { id: 5, link: "skills" },
     { id: 4, link: "contact" },
   ];
-
+  
   return (
     //the main div to wrap up the entire Navbar
     <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-black to-gray-800 fixed">
@@ -31,7 +32,7 @@ function Navbar() {
             key={id}
             className="px-4 cursor-pointer font-medium text-gray-200 hover:scale-105 duration-200 capitalize"
           >
-            <Link to={link} smooth duration={500}>
+            <Link to={link} smooth duration={400}>
               {link}
             </Link>
           </li>
