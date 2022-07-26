@@ -22,8 +22,7 @@ const Home = () => {
             </span>{" "}
             I have a Bachelor Degree In Computer & Information Science <span className="font-bold ">(Majored In Software Development)</span> from
             Auckland University Of Technology. <br /> I{" "}
-            believe that front-end development satisfy my need for creativity. I love front-end web development because of 
-            the fact that it lets me create new things out of
+            believe that front-end development satisfy my need for creativity. 
             nothing.
           </p>
 
@@ -32,7 +31,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={300}
-              className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer mb-10"
+              className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer mb-14"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300 ">
@@ -46,7 +45,7 @@ const Home = () => {
           <img
             src={Degree}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/3 md:w-half"
+            className="rounded-2xl mx-auto w-2/4 md:w-half "
           />
         </div>
       </div>
