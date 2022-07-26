@@ -49,7 +49,7 @@ function Navbar() {
       </div>
 
       {navIcon && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-l from-pink-600 to-black">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-opacity-90 bg-black">
           {headerMenu.map(({ link, id }) => (
             <li
               key={id}
