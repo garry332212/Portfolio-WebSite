@@ -14,16 +14,16 @@ const Home = () => {
             I'm a Front End{" "}
             <spna className="text-purple-300">Web Developer</spna>
           </h2>
-          <p className="text-white py-8 max-w-md md:text-xl ">
+          <p className="text-white py-8 max-w-md md:text-lg ">
             My Name is{" "}
             <span className="font-bold font-ptag text-3xl text-red-500">
               {" "}
               Gurvinder Singh,
             </span>{" "}
             I have a Bachelor Degree In Computer & Information Science <span className="font-bold ">(Majored In Software Development)</span> from
-            Auckland University Of Technology. <br /> I{" "}
+            Auckland University Of Technology. <br /> I
             believe that front-end development satisfy my need for creativity. 
-            nothing.
+            What i like the most about Web Development is the potential to create something spectacular and how that talent develops year after year.
           </p>
 
           <div>
@@ -31,7 +31,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={300}
-              className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer mb-14"
+              className="group text-black w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-400 to-blue-600 cursor-pointer  md:mb-24 md:relative bottom-6 left-0"
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300 ">
