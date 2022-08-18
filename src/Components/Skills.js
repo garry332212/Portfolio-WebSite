@@ -5,9 +5,10 @@ import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import java from "../assets/java.png";
-import c from "../assets/C.png";
+import mysql from "../assets/mysql.png";
 import php from "../assets/php.png";
 import github from "../assets/github.png";
+import mongo from "../assets/mongo.png";
 
 const Skills = () => {
   const techs = [
@@ -49,14 +50,20 @@ const Skills = () => {
     },
     {
       id: 7,
-      src: c,
-      title: "C Programming",
+      src: mysql,
+      title: "MySQL",
       style: "shadow-blue-300",
     },
     {
       id: 8,
       src: php,
       title: "PHP",
+      style: "shadow-purple-300",
+    },
+    {
+      id: 9,
+      src: mongo,
+      title: "MongoDB",
       style: "shadow-purple-300",
     },
   ];
