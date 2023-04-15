@@ -1,4 +1,14 @@
-import { DiceGame, FoodOrdering, LinkedinClone, TodoApp, Expense, Weather, YumYum, LiveRadio,Sylo } from ".";
+import {
+  DiceGame,
+  FoodOrdering,
+  LinkedinClone,
+  TodoApp,
+  Expense,
+  Weather,
+  YumYum,
+  LiveRadio,
+  Sylo,
+} from ".";
 
 const Portfolio = () => {
   const portfolios = [
@@ -67,7 +77,7 @@ const Portfolio = () => {
       src: Sylo,
       link: "https://www.sylo.io/",
       code: "",
-      title: "Web 03Front-End Internship @ Sylo",
+      title: "Web 03 Front-End Internship @ Sylo",
     },
   ];
 
@@ -83,7 +93,6 @@ const Portfolio = () => {
           </p>
           <span className="text-xl">
             <p className="py-6">These Are My Most Recent Projects</p>
-           
           </span>
         </div>
 
@@ -98,10 +107,14 @@ const Portfolio = () => {
               />
               <div className="flex items-center justify-center -mb-4">
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={link} target="_blank" rel="noopener noreferrer">Link</a>
+                  <a href={link} target="_blank" rel="noopener noreferrer">
+                    Link
+                  </a>
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-                  <a href={code} target="_blank" rel="noopener noreferrer">Code</a>
+                  <a href={code} target="_blank" rel="noopener noreferrer">
+                    Code
+                  </a>
                 </button>
               </div>
             </div>
