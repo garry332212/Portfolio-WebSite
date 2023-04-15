@@ -76,7 +76,6 @@ const Portfolio = () => {
       id: 9,
       src: Sylo,
       link: "https://www.sylo.io/",
-      code: "",
       title: "Web 03 Front-End Internship @ Sylo",
     },
   ];
