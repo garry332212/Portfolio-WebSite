@@ -1,11 +1,4 @@
-import React from "react";
-import DiceGame from "../assets/portfolio/Dice Game.JPG";
-import FoodOrdering from "../assets/portfolio/FoodOrdering.JPG";
-import LinkedinClone from "../assets/portfolio/LinkedinClone.JPG";
-import TodoApp from "../assets/portfolio/TodoApp.JPG";
-import Expense from "../assets/portfolio/Expense.JPG";
-import Weather from "../assets/portfolio/Weather.JPG";
-import YumYum from "../assets/portfolio/YumYum.JPG";
+import { DiceGame, FoodOrdering, LinkedinClone, TodoApp, Expense, Weather, YumYum, LiveRadio,Sylo } from ".";
 
 const Portfolio = () => {
   const portfolios = [
@@ -62,6 +55,20 @@ const Portfolio = () => {
       code: "https://github.com/garry332212/LinkedIn-Clone-React-js",
       title: "Linked Home Page Replica In React Js",
     },
+    {
+      id: 8,
+      src: LiveRadio,
+      link: "https://kiwigabroos-music.netlify.app/",
+      code: "https://github.com/garry332212/live-music-player",
+      title: "24x7 Live Indian Radio Music",
+    },
+    {
+      id: 9,
+      src: Sylo,
+      link: "https://www.sylo.io/",
+      code: "",
+      title: "Web 03Front-End Internship @ Sylo",
+    },
   ];
 
   return (
@@ -76,48 +83,7 @@ const Portfolio = () => {
           </p>
           <span className="text-xl">
             <p className="py-6">These Are My Most Recent Projects</p>
-            <p className="py-1 ">
-              I have developed a Todo web app that is using Firebase
-              Authentication to authenticate users. In this app, users are able
-              to signup with email and create a new account where they can add
-              their TO-DOS. That account later can be used to log in to the todo
-              app so the users can add and delete to-dos.{" "}
-              <span className="font-bold text-red-500">(React Js)</span>
-            </p>
-            <p className="py-1">
-              I developed this restaurant app which lets the users order food
-              available on the restaurant's menu. Once users have selected the
-              food it will get added to the cart, then the user can open the
-              cart and add or delete items via cart. Users then can enter their
-              details for the order and click confirm. These order details will
-              be sent to the Firebase database including food items and user
-              details..{" "}
-              <span className="font-bold text-red-500">(React Js)</span>{" "}
-            </p>
-            <p className="py-1">
-              This project is a LinkedIn home page clone. Developed using
-              Material Ui{" "}
-              <span className="font-bold text-red-500">(React Js)</span>
-            </p>
-            <p className="py-1 mb-4">
-              This project is a 1v1 dice game in which you roll a die and if you
-              get any number above 1 it will be added as a score and you can
-              roll the dice again until you get 1. if the dice rolls 1 then it
-              switches to the next player and another player can roll the dice
-              and earn points. users can also click hold to hold their scores.
-              (when the dice rolls 1, the score sets to 0 and switches the
-              player). The player who reaches 50 points first wins the game{" "}
-              <span className="font-bold text-red-500">(JavaScript)</span>
-            </p>
-            <p className="py-1 mb-10">
-              I created this React project as I started learning React js. This
-              project was created using states and props only (very basics of
-              React features) Expense Tracker lets users add their expenses with
-              the date they have spent the amount and then displays it to the
-              user with bars. These bars indicate in which month of the year
-              user has spent more money.
-              <span className="font-bold text-red-500">(React js)</span>
-            </p>
+           
           </span>
         </div>
 

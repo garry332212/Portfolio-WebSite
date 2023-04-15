@@ -2,6 +2,7 @@ import React from "react";
 import Degree from "../assets/degree.jpg";
 import { TbArrowNarrowRight } from "react-icons/tb";
 import { Link } from "react-scroll";
+
 const Home = () => {
   return (
     <div
@@ -13,11 +14,11 @@ const Home = () => {
           <h2 className="text-3xl sm:text-4xl md:text-4xl font-bold text-white md:relative left-10">
             {" "}
             Hello I'm{" "}
-            <span className="text-6xl text-transparent  bg-clip-text bg-gradient-to-r from-red-300 to-cyan-600">
+            <span className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-cyan-600">
               Gurvinder{" "}
             </span>
             I'm a Junior
-            <span className="text-6xl text-transparent  bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
+            <span className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
               {" "}
               Web Developer
             </span>
@@ -40,11 +41,11 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="md:pt-60 pb-28">
+        <div className="pb-28 hidden sm:block md:px-5">
           <img
             src={Degree}
             alt="my profile"
-            className="rounded-2xl mx-auto w-2/4 md:w-half sm:relative left-10 transform transition-all sm:hover:scale-75 md:hover:scale-125"
+            className="rounded-2xl mx-auto w-3/4 md:w-1/2 lg:w-3/4 sm:w-5/12 xs:w-1/2 xs:mb-5 md:relative left-10 transform transition-all sm:hover:scale-75 md:hover:scale-110"
           />
         </div>
       </div>

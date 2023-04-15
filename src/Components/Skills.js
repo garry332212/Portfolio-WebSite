@@ -79,7 +79,7 @@ const Skills = () => {
             Skills
           </p>
           <p className="py-6">
-            I have a good experience working with the following
+          I am proficient in working with a wide range of programming languages and technologies. Some of my areas of expertise include
           </p>
         </div>
 

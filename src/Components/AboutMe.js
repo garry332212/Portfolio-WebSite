@@ -12,23 +12,29 @@ const AboutMe = () => {
             About
           </p>
         </div>
-        <p className="text-2xl mt-10">
-          I graduated from Auckland University of Technology, earning my
-          bachelor’s in{" "}
-          <span className="font-extrabold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-            {" "}
-            Computer and Information Sciences
+        <p className="text-2xl mt-10 leading-10 tracking-wide">
+          {textInfo.openingText}
+          <span className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 leading-10 mx-2 animate-pulse">
+            {textInfo.major}
           </span>
-          . I am a motivated software developer with 6 months of experience in
-          web development and native app development. I specialize in React
-          JavaScript and have university experience working with PHP,
-          TypeScript, C#, JAVA, and C. I also have experience working with React
-          Native.
+          {textInfo.middleText}
+          <span className="inline-block mx-3">
+            {words.map((word, index) => (
+              <span
+                key={index}
+                className="inline-block animate-bounce mx-1.5  text-transparent bg-clip-text bg-gradient-to-r from-white to-yellow-400"
+                style={{ animationDelay: `${0.1 * (index + 1)}s` }}
+              >
+                {word}
+              </span>
+            ))}
+          </span>
+          {textInfo.middleText2}
           <br />
           <br />
         </p>
 
-        <div className="font-bold">
+        <div className="font-bold leading-loose tracking-widest">
           <p className="mb-2 text-xl text-rose-500">CORE SKILLS:</p>
           <p className="text-xl">Front-End Technologies:</p>
           <em className=" text-xl text-transparent  bg-clip-text bg-gradient-to-r from-red-400 to-white">
@@ -60,24 +66,46 @@ const AboutMe = () => {
           <p className="pt-4 text-xl">Programming Languages</p>
           <em className=" text-xl text-transparent  bg-clip-text bg-gradient-to-r from-red-400 to-white">
             {" "}
-            JavaScript(ReactJs), PHP, Java, C#, and C.
+            {words.map((languages) => ` ${languages}`)}
           </em>
         </div>
         <br />
-
-        <p className="text-2xl mt-8 mb-10 ">
-          {" "}
-          I am very enthusiastic about Web Development. React is my favorite
-          Javascript library This Portfolio Website itself was created using
-          React.js and Tailwind CSS. I found React so much better to create Web
-          Applications due to its reusability. I{" "}
-          <span className="text-red-500">♥</span> creating React.js projects, i
-          have also worked on React Native applications and currently learning
-          Typescript + React and React Native.{" "}
-        </p>
+        <p className="text-2xl mt-8 mb-10 ">{textInfo.bottomText}</p>
       </div>
     </div>
   );
 };
 
 export default AboutMe;
+const textInfo = {
+  openingText:
+    "I am a recent graduate from Auckland University of Technology, where I earned my Bachelor's degree in",
+  major: "Computer and Information Sciences",
+  middleText:
+    ". As a passionate software developer, I have experience working with various programming languages including",
+  middleText2:
+    " . In addition to my academic experience, I have also worked on a variety of web development and native app development projects that have helped me to develop my skills and knowledge in the field. My primary expertise lies in developing web applications using React JavaScript, but I also have experience working with React Native to develop mobile applications. I am a fast learner and a dedicated team player, always eager to expand my skill set and take on new challenges.",
+
+  bottomText: (
+    <span className=" leading-10 tracking-wide">
+      I am extremely passionate about web development, and I find React to be
+      the most exciting JavaScript library. This portfolio website is a
+      testament to my proficiency in React.js and Tailwind CSS. I believe that
+      React's reusable components make it the ideal choice for building dynamic
+      web applications.
+      I'm passionate about developing projects using React.js, and I have experience working on React Native applications. Currently, I'm expanding my skills by learning Typescript with React and React Native.{" "}
+    </span>
+  ),
+};
+
+//keywords to hav bouncy effect
+const words = [
+  "React",
+  "JavaScript",
+  "PHP",
+  "TypeScript",
+  "C#",
+  "JAVA",
+  "and",
+  "C",
+];

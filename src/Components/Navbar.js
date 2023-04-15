@@ -3,7 +3,6 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-
 function Navbar() {
   //useState for the menu icon to do change its state
 
@@ -17,15 +16,13 @@ function Navbar() {
     { id: 5, link: "skills" },
     { id: 4, link: "contact" },
   ];
-  
+
   return (
-    //the main div to wrap up the entire Navbar
-    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-black to-gray-800 fixed">
+    <div className=" flex justify-between items-center w-full h-20 px-4 text-white bg-gradient-to-r from-black to-gray-800 fixed navbar z-10">
       <div>
         <h1 className="text-5xl font-signature ml-1">I'm Gurvinder </h1>
       </div>
 
-      {/* This ul tags will wrap the links and style them within  */}
       <ul className="hidden md:flex">
         {headerMenu.map(({ id, link }) => (
           <li
@@ -39,12 +36,10 @@ function Navbar() {
         ))}
       </ul>
 
-      {/* Now Add The Icons Here */}
       <div
         onClick={() => setNavIcon(!navIcon)}
         className="cursor-pointer pr-4 z-10 text-white md:hidden"
       >
-        {/* Changes the icons on Click with useState Hook */}
         {navIcon ? <FaTimes size={30} /> : <GiHamburgerMenu size={30} />}
       </div>
 
