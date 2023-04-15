@@ -17,7 +17,7 @@ const Home = () => {
             <span className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-cyan-600">
               Gurvinder{" "}
             </span>
-            I'm a Junior
+            I'm a Front-End
             <span className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-purple-600">
               {" "}
               Web Developer
